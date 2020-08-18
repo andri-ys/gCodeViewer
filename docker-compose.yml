@@ -1,8 +1,8 @@
 version: "3.7"
 services:
   gcode:
-    build:
-      context: .
-    image: gcodews
+    image: nginx:1.19.2-alpine
+    volumes:
+      - ./:/usr/share/nginx/html
     ports:
       - 7890:80
