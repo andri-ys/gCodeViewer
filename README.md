@@ -6,20 +6,15 @@ which is unsafe (and you should never browse internet with that option "on").
 
 ### Docker Setup Instructions:
 
-1. Build docker image
+1. Run docker-compose
 ``` bash
-docker build -t gcodews .
+docker-compose up -d
 ```
 
-2. Run docker image
-``` bash
-docker docker run --name gcodews -d -p 8080:80 gcodews
+2. Access site via port `7890` on your browser
 ```
-
-3. Access site via port `8080` on your browser
-```
-localhost:8080
-127.0.0.1:8080
-X.X.X.X:8080
-<domain-name>:8080
+localhost:7890
+127.0.0.1:7890
+X.X.X.X:7890
+<domain-name>:7890
 ```
