@@ -1,0 +1,8 @@
+version: "3.7"
+services:
+  gcode:
+    build:
+      context: .
+    image: gcodews
+    ports:
+      - 7890:80
